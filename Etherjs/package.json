@@ -1,0 +1,19 @@
+{
+  "name": "etherjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "deploy.js",
+  "scripts": {
+    "start": "npm run compile && tsc deploy.ts && node deploy.js",
+    "compile": "npx solcjs --bin --abi --include-path node_modules/ --base-path . -o . Contract.sol"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "solc": "^0.8.17"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "address": "0x6592F769efD13391eEc286113F05C79835a39c14",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "reciever",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "name": "sendMoney",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x5683e28fe3d8ebba3839a8c60c07959d84c02bc65fef94b01e90ef5e26ddcfcf",
+  "receipt": {
+    "to": null,
+    "from": "0xe7bb9BD3c1b844472310Fd53F3B13f318FAcB84C",
+    "contractAddress": "0x6592F769efD13391eEc286113F05C79835a39c14",
+    "transactionIndex": 64,
+    "gasUsed": "141493",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xfd185a5f579edc59679675b58a1f50db4122d12ccc61beaed00376ab5165dcfa",
+    "transactionHash": "0x5683e28fe3d8ebba3839a8c60c07959d84c02bc65fef94b01e90ef5e26ddcfcf",
+    "logs": [],
+    "blockNumber": 8256333,
+    "cumulativeGasUsed": "14345770",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "140c6ba54c40da9aac741a4f9f6cf16d",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"reciever\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"name\":\"sendMoney\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/SupportMe.sol\":\"SupportMe\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/SupportMe.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity ^0.8.17;\\n\\ncontract SupportMe {\\n    function sendMoney(address reciever, uint256 balance) public payable {\\n        payable(reciever).transfer(balance);\\n    }\\n}\\n\",\"keccak256\":\"0xa4e8fff021f9da9630e4cd4bb2985840f5df732ee0cf7db5cc6d92e55e142cf7\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610199806100206000396000f3fe60806040526004361061001e5760003560e01c8063ee4ae2c914610023575b600080fd5b61003d60048036038101906100389190610123565b61003f565b005b8173ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050158015610085573d6000803e3d6000fd5b505050565b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006100ba8261008f565b9050919050565b6100ca816100af565b81146100d557600080fd5b50565b6000813590506100e7816100c1565b92915050565b6000819050919050565b610100816100ed565b811461010b57600080fd5b50565b60008135905061011d816100f7565b92915050565b6000806040838503121561013a5761013961008a565b5b6000610148858286016100d8565b92505060206101598582860161010e565b915050925092905056fea2646970667358221220640389c223db3f7898f46b9e620594133ea68cc8fd715349a9856d56bff595d064736f6c63430008110033",
+  "deployedBytecode": "0x60806040526004361061001e5760003560e01c8063ee4ae2c914610023575b600080fd5b61003d60048036038101906100389190610123565b61003f565b005b8173ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050158015610085573d6000803e3d6000fd5b505050565b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006100ba8261008f565b9050919050565b6100ca816100af565b81146100d557600080fd5b50565b6000813590506100e7816100c1565b92915050565b6000819050919050565b610100816100ed565b811461010b57600080fd5b50565b60008135905061011d816100f7565b92915050565b6000806040838503121561013a5761013961008a565b5b6000610148858286016100d8565b92505060206101598582860161010e565b915050925092905056fea2646970667358221220640389c223db3f7898f46b9e620594133ea68cc8fd715349a9856d56bff595d064736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
